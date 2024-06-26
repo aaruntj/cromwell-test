@@ -1,7 +1,7 @@
 # Cromwell Test
 
 ### Description
-Welcome to my test as part of the
+Welcome to my test as part of the Cromwell application. This is a simple website involving a React front-end, a node.js API and a Postgres Database.
 
 ### How to run the application
 (This tutorial assumes you have git and nodejs installed already)
