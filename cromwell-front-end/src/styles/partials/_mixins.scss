@@ -1,0 +1,17 @@
+@use './variables' as *;
+
+// mobile = 320px+
+
+// tablet = 768px+
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+// desktop = 1280px+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}

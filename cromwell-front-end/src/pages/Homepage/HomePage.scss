@@ -1,0 +1,61 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/colours' as *;
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f7f7f7;
+
+  &__welcome {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__location {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease, max-height 0.3s ease;
+  overflow: hidden;
+  max-height: 80px;
+
+  &:hover {
+    transform: translateY(-5px);
+    max-height: 300px;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    display: none;
+
+    .card:hover & {
+      display: block;
+    }
+  }
+}
